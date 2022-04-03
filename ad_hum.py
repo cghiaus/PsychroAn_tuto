@@ -27,7 +27,7 @@ l = 2496e3                  # latent heat J/kg
 # *****************************************
 # RECYCLED AIR
 # *****************************************
-def ModelRecAir(m, α, β, θS, θIsp, φIsp, tO, φO, Qsa, Qla, mi, UA):
+def ModelRecAir(m, α, β, θS, θIsp, φIsp, θO, φO, Qsa, Qla, mi, UA):
     """
     Model:
         Heating and adiabatic humidification
@@ -43,7 +43,7 @@ def ModelRecAir(m, α, β, θS, θIsp, φIsp, tO, φO, Qsa, Qla, mi, UA):
         θS      supply air, °C
         θIsp    indoor air setpoint, °C
         φIsp    indoor relative humidity set point, -
-        tO      outdoor temperature for design, °C
+        θO      outdoor temperature for design, °C
         φO      outdoor relative humidity for design, -
         Qsa     aux. sensible heat, W
         Qla     aux. latente heat, W
@@ -82,17 +82,17 @@ def ModelRecAir(m, α, β, θS, θIsp, φIsp, tO, φO, Qsa, Qla, mi, UA):
 
     """
     Kθ, Kw = 1e10, 1e10             # controller gain
-    wO = psy.w(tO, φO)            # hum. out
+    wO = psy.w(θO, φO)            # hum. out
     wIsp = psy.w(θIsp, φIsp)      # indoor mumidity ratio
 
     # Model
-    ts0, Del_ts = θS, 2             # initial guess saturation temp.
+    ts0, Δ_ts = θS, 2             # initial guess saturation temp.
 
     A = np.zeros((16, 16))          # coefficents of unknowns
     b = np.zeros(16)                # vector of inputs
-    while Del_ts > 0.01:
+    while Δ_ts > 0.01:
         # MX1
-        A[0, 0], A[0, 10], b[0] = m * c, -(1 - α) * m * c, α * m * c * tO
+        A[0, 0], A[0, 10], b[0] = m * c, -(1 - α) * m * c, α * m * c * θO
         A[1, 1], A[1, 11], b[1] = m * l, -(1 - α) * m * l, α * m * l * wO
         # HC1
         A[2, 0], A[2, 2], A[2, 12], b[2] = m * c, -m * c, 1, 0
@@ -112,20 +112,20 @@ def ModelRecAir(m, α, β, θS, θIsp, φIsp, tO, φO, Qsa, Qla, mi, UA):
         A[11, 9], A[11, 11], A[11, 15], b[11] = m * l, -m * l, 1, 0
         # BL
         A[12, 10], A[12, 14], b[12] = (UA + mi * c), 1, (UA + mi * c
-                                                         ) * tO + Qsa
+                                                         ) * θO + Qsa
         A[13, 11], A[13, 15], b[13] = mi * l, 1, mi * l * wO + Qla
         # Kθ & Kw
         A[14, 10], A[14, 12], b[14] = Kθ, 1, Kθ * θIsp
         A[15, 11], A[15, 13], b[15] = Kw, 1, Kw * wIsp
 
         x = np.linalg.solve(A, b)
-        Del_ts = abs(ts0 - x[4])
+        Δ_ts = abs(ts0 - x[4])
         ts0 = x[4]
     return x
 
 
 def RecAirCAV(α=1, β=0.1,
-              θS=30, θIsp=18, φIsp=0.49, tO=-1, φO=1,
+              θS=30, θIsp=18, φIsp=0.49, θO=-1, φO=1,
               Qsa=0, Qla=0, mi=2.18, UA=935.83):
     """
     Model:
@@ -141,7 +141,7 @@ def RecAirCAV(α=1, β=0.1,
         θS      supply air, °C
         θIsp    indoor air setpoint, °C
         φIsp  indoor relative humidity set point, -
-        tO      outdoor temperature for design, °C
+        θO      outdoor temperature for design, °C
         φO    outdoor relative humidity for design, -
         Qsa     aux. sensible heat, W
         Qla     aux. latente heat, W
@@ -179,26 +179,26 @@ def RecAirCAV(α=1, β=0.1,
     None
     """
     plt.close('all')
-    wO = psy.w(tO, φO)            # hum. out
+    wO = psy.w(θO, φO)            # hum. out
 
     # Mass flow rate for design conditions
     # Supplay air mass flow rate
-    # QsZ = UA*(tO - θIsp) + mi*c*(tO - θIsp)
+    # QsZ = UA*(θO - θIsp) + mi*c*(θO - θIsp)
     # m = - QsZ/(c*(θS - θIsp)
     # where
-    # tO, wO = -1, 3.5e-3           # outdoor
+    # θO, wO = -1, 3.5e-3           # outdoor
     # θS = 30                       # supply air
     # mid = 2.18                     # infiltration
     QsZ = UA * (θOd - θIsp) + mid * c * (θOd - θIsp)
     m = - QsZ / (c * (θS - θIsp))
     print(f'm = {m: 5.3f} kg/s constant for design conditions:')
-    print(f'    [θSd = {θS: 3.1f} °C, mi = 2.18 kg/S, tO = -1°C, φ0 = 100%]')
+    print(f'    [θSd = {θS: 3.1f} °C, mi = 2.18 kg/S, θO = -1°C, φ0 = 100%]')
 
     # Model
     x = ModelRecAir(m, α, β,
-                    θS, θIsp, φIsp, tO, φO, Qsa, Qla, mi, UA)
+                    θS, θIsp, φIsp, θO, φO, Qsa, Qla, mi, UA)
 
-    t = np.append(tO, x[0:12:2])
+    θ = np.append(θO, x[0:12:2])
     w = np.append(wO, x[1:12:2])
 
     # Adjancy matrix
@@ -211,12 +211,12 @@ def RecAirCAV(α=1, β=0.1,
                   [+0, +0, +0, +0, -1, +1, +0],     # HC2
                   [+0, +0, +0, +0, +0, -1, +1]])    # TZ
 
-    psy.chartA(t, w, A)
+    psy.chartA(θ, w, A)
 
-    t = pd.Series(t)
+    θ = pd.Series(θ)
     w = 1000 * pd.Series(w)
-    P = pd.concat([t, w], axis=1)       # points
-    P.columns = ['t [°C]', 'w [g/kg]']
+    P = pd.concat([θ, w], axis=1)       # points
+    P.columns = ['θ [°C]', 'w [g/kg]']
 
     output = P.to_string(formatters={
         't [°C]': '{:,.2f}'.format,
@@ -235,7 +235,7 @@ def RecAirCAV(α=1, β=0.1,
 
 
 def RecAirVAV(α=1, β=0.1,
-              θSsp=30, θIsp=18, φIsp=0.49, tO=-1, φO=1,
+              θSsp=30, θIsp=18, φIsp=0.49, θO=-1, φO=1,
               Qsa=0, Qla=0, mi=2.18, UA=935.83):
     """
     Created on Fri Apr 10 13:57:22 2020
@@ -250,7 +250,7 @@ def RecAirVAV(α=1, β=0.1,
         θS      supply air, °C
         θIsp    indoor air setpoint, °C
         φIsp  indoor relative humidity set point, -
-        tO      outdoor temperature for design, °C
+        θO      outdoor temperature for design, °C
         φO    outdoor relative humidity for design, -
         Qsa     aux. sensible heat, W
         Qla     aux. latente heat, W
@@ -299,12 +299,12 @@ def RecAirVAV(α=1, β=0.1,
 
         """
         x = ModelRecAir(m, α, β,
-                        θSsp, θIsp, φIsp, tO, φO, Qsa, Qla, mi, UA)
+                        θSsp, θIsp, φIsp, θO, φO, Qsa, Qla, mi, UA)
         θS = x[8]
         return (θS - θSsp)
 
     plt.close('all')
-    wO = psy.w(tO, φO)            # hum. out
+    wO = psy.w(θO, φO)            # hum. out
 
     # Mass flow rate
     res = least_squares(Saturation, 5, bounds=(0, 10))
@@ -315,17 +315,17 @@ def RecAirVAV(α=1, β=0.1,
 
     print(f'm = {m: 5.3f} kg/s')
     x = ModelRecAir(m, α, β,
-                    θSsp, θIsp, φIsp, tO, φO, Qsa, Qla, mi, UA)
+                    θSsp, θIsp, φIsp, θO, φO, Qsa, Qla, mi, UA)
 
-    # DθS, m = 2, 1                   # initial temp; diff; flow rate
-    # while DθS > 0.01:
+    # ΔθS, m = 2, 1                   # initial temp; diff; flow rate
+    # while ΔθS > 0.01:
     #     m = m + 0.01
     #     # Model
-    #     x = ModelRecAir(m, θSsp, mi, tO, φO, α, β)
+    #     x = ModelRecAir(m, θSsp, mi, θO, φO, α, β)
     #     θS = x[8]
-    #     DθS = -(θSsp - θS)
+    #     ΔθS = -(θSsp - θS)
 
-    t = np.append(tO, x[0:12:2])
+    θ = np.append(θO, x[0:12:2])
     w = np.append(wO, x[1:12:2])
 
     # Adjancy matrix
@@ -338,15 +338,15 @@ def RecAirVAV(α=1, β=0.1,
                   [+0, +0, +0, +0, -1, +1, +0],     # HC2
                   [+0, +0, +0, +0, +0, -1, +1]])    # TZ
 
-    psy.chartA(t, w, A)
+    psy.chartA(θ, w, A)
 
-    t = pd.Series(t)
+    θ = pd.Series(θ)
     w = 1000 * pd.Series(w)
-    P = pd.concat([t, w], axis=1)       # points
-    P.columns = ['t [°C]', 'w [g/kg]']
+    P = pd.concat([θ, w], axis=1)       # points
+    P.columns = ['θ [°C]', 'w [g/kg]']
 
     output = P.to_string(formatters={
-        't [°C]': '{:,.2f}'.format,
+        'θ [°C]': '{:,.2f}'.format,
         'w [g/kg]': '{:,.2f}'.format
     })
     print()
@@ -363,7 +363,7 @@ def RecAirVAV(α=1, β=0.1,
 
 # RecAirCAV()
 # RecAirVAV()
-# RecAirVAV(θSsp=30, mi=2.18, tO=-1, φO=1, α=0.5, β=0.50)
-# θSsp=20, mi=2.18, tO=-1, φO=1, α=1, β=0
-# RecAirVAV(20, 2.18, -1, 1, 1, 0.1)
-# ModelRecAir(m, θSsp, mi, tO, φO, α, β)
+# RecAirVAV(θSsp=30, mi=2.18, θO=-1, φO=1, α=0.5, β=0.50)
+
+# RecAirVAV(Ssp=20, mi=2.18, θO=-1, φO=1, α=1, β=0.1)
+# ModelRecAir(m, θSsp, mi, θO, φO, α, β)
