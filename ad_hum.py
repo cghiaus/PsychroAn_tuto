@@ -86,11 +86,11 @@ def ModelRecAir(m, α, β, θS, θIsp, φIsp, θO, φO, Qsa, Qla, mi, UA):
     wIsp = psy.w(θIsp, φIsp)      # indoor mumidity ratio
 
     # Model
-    ts0, Δ_ts = θS, 2             # initial guess saturation temp.
+    θs0, Δ_θs = θS, 2             # initial guess saturation temp.
 
     A = np.zeros((16, 16))          # coefficents of unknowns
     b = np.zeros(16)                # vector of inputs
-    while Δ_ts > 0.01:
+    while Δ_θs > 0.01:
         # MX1
         A[0, 0], A[0, 10], b[0] = m * c, -(1 - α) * m * c, α * m * c * θO
         A[1, 1], A[1, 11], b[1] = m * l, -(1 - α) * m * l, α * m * l * wO
@@ -99,8 +99,8 @@ def ModelRecAir(m, α, β, θS, θIsp, φIsp, θO, φO, Qsa, Qla, mi, UA):
         A[3, 1], A[3, 3], b[3] = m * l, -m * l, 0
         # AH
         A[4, 2], A[4, 3], A[4, 4], A[4, 5], b[4] = c, l, -c, -l, 0
-        A[5, 4], A[5, 5] = psy.wsp(ts0), -1
-        b[5] = psy.wsp(ts0) * ts0 - psy.w(ts0, 1)
+        A[5, 4], A[5, 5] = psy.wsp(θs0), -1
+        b[5] = psy.wsp(θs0) * θs0 - psy.w(θs0, 1)
         # MX2
         A[6, 2], A[6, 4], A[6, 6], b[6] = β * m * c, (1 - β) * m * c, -m * c, 0
         A[7, 3], A[7, 5], A[7, 7], b[7] = β * m * l, (1 - β) * m * l, -m * l, 0
@@ -119,8 +119,8 @@ def ModelRecAir(m, α, β, θS, θIsp, φIsp, θO, φO, Qsa, Qla, mi, UA):
         A[15, 11], A[15, 13], b[15] = Kw, 1, Kw * wIsp
 
         x = np.linalg.solve(A, b)
-        Δ_ts = abs(ts0 - x[4])
-        ts0 = x[4]
+        Δ_θs = abs(θs0 - x[4])
+        θs0 = x[4]
     return x
 
 
@@ -363,7 +363,3 @@ def RecAirVAV(α=1, β=0.1,
 
 # RecAirCAV()
 # RecAirVAV()
-# RecAirVAV(θSsp=30, mi=2.18, θO=-1, φO=1, α=0.5, β=0.50)
-
-# RecAirVAV(Ssp=20, mi=2.18, θO=-1, φO=1, α=1, β=0.1)
-# ModelRecAir(m, θSsp, mi, θO, φO, α, β)
