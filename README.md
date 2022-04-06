@@ -9,7 +9,7 @@
 3. `T03_mix.ipynb` Adiabatic mixing and isentalpic condensation
 4. `T04_va_hum.ipynb` Heating and vapor humidification
 5. `T05_ad_hum.ipynb` Heating and adiabatic humidification
-6. `T06_cool` Cooenvironment.ymlling with recycling
+6. `T06_cool` Cooling with recycling
 
 **Bibliography**
 
