@@ -176,4 +176,6 @@ def chartA(t, wv, A,
         # plot no. point
         for j in range(0, np.shape(tk)[1]):
             plt.text(t[tk][j], wv[tk][j], str(tk[0][j]))
+    plt.draw()
+    plt.show()
     return None
