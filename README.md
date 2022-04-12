@@ -1,15 +1,24 @@
 # PsychroAn_tuto - Computational psychrometric analysis of HVAC systems: tutorials
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD) Jupyter notebooks
+
+**Interactive web pages (Voilà)**
+1. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT03_mix.ipynb) Adiabatic mixing and isentalpic condensation.
+
+2. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT04_va_hum.ipynb) Heating and vapor humidification.
+
+3. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT05_ad_hum.ipynb) Heating and adiabatic humidification.
+
+4. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT06_cool.ipynb) Cooling with dehumidification.
 
 **Contents**
 
-1. `T01_moist_air_prop.ipynb` Moist air properties
-2. `T02_loads_winter.ipynb` Thermal loads: winter
-3. `T03_mix.ipyn` Adiabatic mixing and isentalpic condensation
-4. `T04_va_hum.ipynb` Heating and vapor humidification
-5. `T05_ad_hum.ipynb` Heating and adiabatic humidification
-6. `T06_cool` Cooenvironment.ymlling with recycling
+1. `T01_moist_air_prop.ipynb` Moist air properties.
+2. `T02_loads_winter.ipynb` Thermal loads: winter.
+3. `T03_mix.ipynb` Adiabatic mixing and isentalpic condensation.
+4. `T04_va_hum.ipynb` Heating and vapor humidification.
+5. `T05_ad_hum.ipynb` Heating and adiabatic humidification.
+6. `T06_cool` Cooling with dehumidification.
 
 **Bibliography**
 
