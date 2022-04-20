@@ -11,7 +11,7 @@
 5. `T05_ad_hum.ipynb` Heating and adiabatic humidification.
 6. `T06_cool` Cooling with dehumidification.
 
-**Interactive web pages (Voilà)**
+**Interactive web pages (using Voilà)**
 1. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT03_mix.ipynb) Adiabatic mixing and isentalpic condensation.
 
 2. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT04_va_hum.ipynb) Heating and vapor humidification.
