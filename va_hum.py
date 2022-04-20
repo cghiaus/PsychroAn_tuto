@@ -44,8 +44,8 @@ mid = 0.0057
 UAd = 85.9
 
 # constants
-c = 1e3                     # air specific heat J/kg K
-l = 2496e3                  # latent heat J/kg
+c = 1e3         # air specific heat J/kg K
+l = 2496e3      # latent heat J/kg
 
 # *****************************************
 # ALL OUT AIR
@@ -87,6 +87,7 @@ def ModelAllOutAir(m, θS, θIsp, φIsp, θO, φO, Qsa, Qla, mi, UA):
     10 Unknowns
         0, 1, 2 points (temperature, humidity ratio)
         QsHC, QlVH, QsTZ, QlTZ
+        x = [θ0, w0, θ1, w1, θ2, w2, QsHC, QlVH, QsTZ, QlTZ]
 
     --o->HC--0->VH--1->TZ--2-->
          s       l     sl  |
@@ -116,9 +117,9 @@ def ModelAllOutAir(m, θS, θIsp, φIsp, θO, φO, Qsa, Qla, mi, UA):
     A[6, 4], A[6, 8], b[6] = UA + mi * c, 1, (UA + mi * c) * θO + Qsa
     A[7, 5], A[7, 9], b[7] = mi * l, 1, mi * l * wO + Qla
     # Kt indoor temperature controller
-    A[8, 4], A[8, 8], b[8] = Kt, 1, Kt * θIsp
+    A[8, 4], A[8, 6], b[8] = Kt, 1, Kt * θIsp
     # Kw indoor hum.ratio controller
-    A[9, 5], A[9, 9], b[9] = Kw, 1, Kw * wIsp
+    A[9, 5], A[9, 7], b[9] = Kw, 1, Kw * wIsp
 
     # Solution
     x = np.linalg.solve(A, b)
