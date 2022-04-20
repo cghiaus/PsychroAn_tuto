@@ -198,11 +198,11 @@ def AllOutAirCAV(θS=30, θIsp=18, φIsp=0.5, θO=-1, φO=1,
     t = pd.Series(t)
     w = 1000 * pd.Series(w)
     P = pd.concat([t, w], axis=1)       # points
-    P.columns = ['t [°C]', 'w [g/kg]']
+    P.columns = ['θ [°C]', 'w [g/kg]']
     P.index = ['O', 'HC', 'VH', 'I']
 
     output = P.to_string(formatters={
-        't [°C]': '{:,.2f}'.format,
+        'θ [°C]': '{:,.2f}'.format,
         'w [g/kg]': '{:,.2f}'.format
     })
     print()
@@ -288,10 +288,10 @@ def AllOutAirVAV(θSsp=30, θIsp=18, φIsp=0.5, θO=-1, φO=1,
     t = pd.Series(t)
     w = 1000 * pd.Series(w)
     P = pd.concat([t, w], axis=1)       # points
-    P.columns = ['t [°C]', 'w [g/kg]']
+    P.columns = ['θ [°C]', 'w [g/kg]']
 
     output = P.to_string(formatters={
-        't [°C]': '{:,.2f}'.format,
+        'θ [°C]': '{:,.2f}'.format,
         'w [g/kg]': '{:,.2f}'.format
     })
     print()
@@ -469,10 +469,10 @@ def RecAirCAV(α=0.5, θS=30, θIsp=18, φIsp=0.5, θO=-1, φO=1,
     t = pd.Series(t)
     w = 1000 * pd.Series(w)
     P = pd.concat([t, w], axis=1)       # points
-    P.columns = ['t [°C]', 'w [g/kg]']
+    P.columns = ['θ [°C]', 'w [g/kg]']
 
     output = P.to_string(formatters={
-        't [°C]': '{:,.2f}'.format,
+        'θ [°C]': '{:,.2f}'.format,
         'w [g/kg]': '{:,.2f}'.format
     })
     print()
@@ -567,10 +567,10 @@ def RecAirVAV(α=0.5, θSsp=30, θIsp=18, φIsp=0.5, θO=-1, φO=1,
     t = pd.Series(t)
     w = 1000 * pd.Series(w)
     P = pd.concat([t, w], axis=1)           # points
-    P.columns = ['t [°C]', 'w [g/kg]']
+    P.columns = ['θ [°C]', 'w [g/kg]']
 
     output = P.to_string(formatters={
-        't [°C]': '{:,.2f}'.format,
+        'θ [°C]': '{:,.2f}'.format,
         'w [g/kg]': '{:,.2f}'.format
     })
     print()
