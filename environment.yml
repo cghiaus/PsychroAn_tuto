@@ -4,7 +4,7 @@ channels:
   - conda-forge
 
 dependencies:
-  - python=3.0.7
+  - python=3.9.7
   - jupyter=1.0.0
   - jupyterlab=3.2.1
   - jupyterlab-widgets=1.0.0
