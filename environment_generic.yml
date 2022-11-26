@@ -1,0 +1,15 @@
+name: PsycAn_cool-env
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python
+  - jupyter
+  - jupyterlab
+  - ipywidgets
+  - matplotlib
+  - numpy
+  - scipy
+  - pandas
+  - voila
