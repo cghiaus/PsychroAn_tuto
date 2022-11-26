@@ -1,4 +1,4 @@
-name: PsycAn_cool
+name: PsycAn_cool-env
 
 channels:
   - conda-forge
