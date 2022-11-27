@@ -12,6 +12,8 @@
 5. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT05_ad_hum.ipynb) `T05_ad_hum.ipynb` Heating and adiabatic humidification.
 6. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT06_cool.ipynb) `T06_cool` Cooling with dehumidification.
 
+**Elementary models**
+
 The models presented in the tutorials are formed by a system of equations constructed with blocks of elementary processes ([Ghiaus 2022](https://hal.archives-ouvertes.fr/hal-03484064/document)).
 > Table. Models of the elementary processes ([Ghiaus 2022](https://hal.archives-ouvertes.fr/hal-03484064/document)).
 > ![](Figures/elementary_processes.png)
