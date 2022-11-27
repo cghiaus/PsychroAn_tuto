@@ -199,7 +199,7 @@ def AllOutAirCAV(θS=30, θIsp=18, φIsp=0.5, θO=-1, φO=1,
     w = 1000 * pd.Series(w)
     P = pd.concat([t, w], axis=1)       # points
     P.columns = ['θ [°C]', 'w [g/kg]']
-    P.index = ['O', 'HC', 'VH', 'I']
+    P.index = ['O', '1', '2', '3']
 
     output = P.to_string(formatters={
         'θ [°C]': '{:,.2f}'.format,
