@@ -1,24 +1,25 @@
 # PsychroAn_tuto - Computational psychrometric analysis of HVAC systems: tutorials
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD) Launch the whole repository.
 
 **Contents**
 
-1. `T01_moist_air_prop.ipynb` Moist air properties.
-2. `T02_loads_winter.ipynb` Thermal loads: winter.
-3. `T03_mix.ipynb` Adiabatic mixing and isentalpic condensation.
-4. `T04_va_hum.ipynb` Heating and vapor humidification.
-5. `T05_ad_hum.ipynb` Heating and adiabatic humidification.
-6. `T06_cool` Cooling with dehumidification.
+*Interactive web pages (using Voilà)*
+1. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT01_moist_air_prop.ipynb) `T01_moist_air_prop.ipynb` Moist air properties.
+2. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT02_loads_winter.ipynb) `T02_loads_winter.ipynb` Thermal loads: winter.
+3. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT03_mix.ipynb)`T03_mix.ipynb` Adiabatic mixing and isentalpic condensation.
+4. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT04_va_hum.ipynb) `T04_va_hum.ipynb` Heating and vapor humidification.
+5. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT05_ad_hum.ipynb) `T05_ad_hum.ipynb` Heating and adiabatic humidification.
+6. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT06_cool.ipynb) `T06_cool` Cooling with dehumidification.
 
-**Interactive web pages (using Voilà)**
-1. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT03_mix.ipynb) Adiabatic mixing and isentalpic condensation.
 
-2. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT04_va_hum.ipynb) Heating and vapor humidification.
 
-3. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT05_ad_hum.ipynb) Heating and adiabatic humidification.
 
-4. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT06_cool.ipynb) Cooling with dehumidification.
+
+**Models for the elementary processes**
+
+The models presented in the tutorials are formed by a system of equations that uses the blocs presented in the table below.
+![](Figures/elementary_processes.png)
 
 **Bibliography**
 
@@ -29,5 +30,3 @@ Ghiaus, C. (2016). Analyse psychrométrique des systèmes de climatisation. *Rev
 Ghiaus, C. (2021). PsychroAn_cool: Psychrometric analysis of cooling systems as a control problem. In Journal of Building Performance Simulation (0.0.0, Vol. 15, Number 1, pp. 21–38). *Zenodo*. DOI: [10.5281/zenodo.5236450](https://doi.org/10.5281/zenodo.5236450)
 
 Ghiaus, C. (2022) Computational psychrometric analysis as a control problem: case of cooling and dehumidification systems, *International Journal of Building Performance Simulation, 15*(1), pp. 21-38, DOI: [10.1080/19401493.2021.1995498](https://doi.org/10.1080/19401493.2021.1995498), (open access preprint [hal-03484064](https://hal.archives-ouvertes.fr/hal-03484064/document))
-
-Bendt, Kyla (2020) Binder and Voila to display Jupyter Notebooks, [kylabendt.com](https://www.kylabendt.com/blog/binder-and-voila-to-display-jupyter-notebooks/)
