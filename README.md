@@ -16,7 +16,7 @@
 
 The models presented in the tutorials are formed by a system of equations constructed with blocks of elementary processes ([Ghiaus 2022](https://hal.archives-ouvertes.fr/hal-03484064/document)).
 > Table. Models of the elementary processes ([Ghiaus 2022](https://hal.archives-ouvertes.fr/hal-03484064/document)).
-> ![](Figures/elementary_processes.png)
+> ![](Figures/elementary_processes.svg)
 
 **Bibliography**
 
