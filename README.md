@@ -14,8 +14,8 @@
 
 **Elementary models**
 
-The models presented in the tutorials are formed by a system of equations constructed with blocks of elementary processes ([Ghiaus 2022](https://hal.archives-ouvertes.fr/hal-03484064/document)).
-> Table. Models of the elementary processes ([Ghiaus 2022](https://hal.archives-ouvertes.fr/hal-03484064/document)).
+The models presented in the tutorials are formed by a system of equations constructed with blocks of elementary processes (Table 1).
+> Table 1. Models of the elementary processes ([Ghiaus 2022](https://hal.archives-ouvertes.fr/hal-03484064/document)).
 > ![](Figures/elementary_processes.svg)
 
 **Bibliography**
@@ -28,3 +28,16 @@ Ghiaus, C. (2021). PsychroAn_cool: Psychrometric analysis of cooling systems as 
 
 Ghiaus, C. (2022) Computational psychrometric analysis as a control problem: case of cooling and dehumidification systems, *International Journal of Building Performance Simulation, 15*(1), pp. 21-38, DOI: [10.1080/19401493.2021.1995498](https://doi.org/10.1080/19401493.2021.1995498), (open access preprint [hal-03484064](https://hal.archives-ouvertes.fr/hal-03484064/document))
 
+*Support*
+
+- [LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
+
+- [LaTex Equations](https://latex.codecogs.com/eqneditor/editor.php)
+
+- [Latex Table generator](https://www.tablesgenerator.com/markdown_tables#)
+
+- [Anaconda cheetsheet](https://docs.continuum.io/anaconda/user-guide/cheatsheet/)
+
+- [Jupyter Notebook cheatsheet](https://medium.com/ibm-data-science-experience/markdown-for-jupyter-notebooks-cheatsheet-386c05aeebed)
+
+- [NumPy for MATLAB users](http://mathesaurus.sourceforge.net/matlab-numpy.html)
