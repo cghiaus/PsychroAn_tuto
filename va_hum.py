@@ -34,14 +34,14 @@ import psychro as psy
 import matplotlib.pyplot as plt
 
 # Design conditions for CAV (to determine m)
-θOd = -1        # outdoor temperarture
-θId = 18        # indoor temperature
-θSd = 30        # summply air temperature
-mid = 0.0057    # infiltration
-Qsad = 216      # 2163.5
-Qlad = 145.2
-mid = 0.0057
-UAd = 85.9
+θOd = -1        # °C, outdoor temperarture
+θId = 18        # °C, indoor temperature
+θSd = 30        # °C summply air temperature
+mid = 0.0057    # kg/s, infiltration
+Qsad = 216      # kW, sensible auxiliary load
+Qlad = 145.2    # kW, latent auxliary load
+mid = 0.0057    # kg/s, air infiltration mass flow rate
+UAd = 85.9      # kJ/K, overall heat conductance
 
 # constants
 c = 1e3         # air specific heat J/kg K
@@ -176,8 +176,8 @@ def AllOutAirCAV(θS=30, θIsp=18, φIsp=0.5, θO=-1, φO=1,
     m = - QsZ / (c * (θSd - θId))
     print('Winter All_out_air CAV')
     print(f'm = {m: 5.3f} kg/s constant (from design conditions)')
-    print(f'Design conditions θS = {θS: 3.1f} °C,'
-          f'mi = {mid:3.1f} kg/s, θO = {θOd:3.1f} °C, '
+    print(f'Design conditions θS = {θS: 3.1f} °C, '
+          f'mi = {mid:.4f} kg/s, θO = {θOd:3.1f} °C, '
           f'θI = {θIsp:3.1f} °C')
 
     # Model
