@@ -118,7 +118,7 @@ def chart(t, w,
         w4t = psy.w(t_range, phi)
         plt.plot(t_range, w4t, linewidth=0.5)
         s_phi = "%3.0f" % phi
-        ax.annotate(s_phi+' %', xy=(t_range[-1]-3, w4t[-1]))
+        ax.annotate(s_phi + ' %', xy=(t_range[-1] - 3, w4t[-1]))
 
     plt.plot(t, w, linewidth=3)    # processes
     return None
@@ -135,7 +135,7 @@ def chartA(t, wv, A,
     wv: np.array, wv.shape = t.shape
         weight vapor, kg/kg_da
     A : np.array [no. processes, no. points = no. temperatures]
-        adjancy matrix: -1 flow our of node, 1 flow in node, 0 no connection
+        adjancy matrix: -1 flow out of node, 1 flow in node, 0 no connection
     t_range : np.arange
         range of temperature
         the default is np.arange(-10, 50, 0.1).
