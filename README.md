@@ -69,4 +69,4 @@ Ghiaus, C. (2022) Computational psychrometric analysis as a control problem: cas
 24. Write the equations and represent a dry cooling process on the psychrometric chart.
 25. Write the equations and represent a cooling with dehumidification process on the psychrometric chart.
 26. Write the equations and represent a vapor humidification process on the psychrometric chart.
-27. Write the equations and represent a adiabatic humidification process on the psychrometric chart.
+27. Write the equations and represent an adiabatic humidification process on the psychrometric chart.
