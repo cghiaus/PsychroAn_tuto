@@ -43,30 +43,31 @@ Ghiaus, C. (2022) Computational psychrometric analysis as a control problem: cas
 - [NumPy for MATLAB users](http://mathesaurus.sourceforge.net/matlab-numpy.html)
 
 **Questions**
-1. What is a model pof a physical process?
+1. What is a model of a physical process?
 2. Define the *inputs* and the *outputs* of a physical system.
 3. Define the *inputs* and the *outputs* of a computational model.
-4. Based on the definition of the inputs an outputs of a physical system and the inputs and outputs of a computational model, define the direct problem and the inverse problem.
+4. Based on the definition of the inputs and outputs of a physical system and the inputs and outputs of a computational model, define the direct problem and the inverse problem.
 5. Describe the inverse problem of model identification.
 6. Describe the inverse problem of control.
 7. Explain the citation: "Divide each difficulty into as many parts as is feasable and necessary to solve it" by René Descartes, Discourse on Method, 1637
 8. Explain the citation: "Whenever I run into a problem I can't solve, I always make it bigger. I can never solve it by trying to make it smaller, but if I make it big enough, I can begin to see the outlines of a solution." by Dwight David Eisenhower.
 9. Explain the inputs: know knowns, unknown knowns, known unknowns, unknown unknowns.
-10. What are the aims of the indoor climat control?
-11. The functions of an Air Handling Unit.
-12. Why the air vector becomes widly used?
-13. Definition of enthalpy.
-14. Definition of mois air.
-15. Saturation pressere of water vapor.
-16. Humidity ratio (or absolute humidity).
-17. Relative humidity.
-18. Moist air enthalpy.
-19. Dew temperature.
-20. Dry bulb and wet bulb temperature.
-21. Sensible enthalpy and latent enthalpy.
-22. Write the equations and represent a mixing process on the psychrometric chart.
-23. Write the equations and represent a heating process on the psychrometric chart.
-24. Write the equations and represent a dry cooling process on the psychrometric chart.
-25. Write the equations and represent a cooling with dehumidification process on the psychrometric chart.
-26. Write the equations and represent a vapor humidification process on the psychrometric chart.
-27. Write the equations and represent an adiabatic humidification process on the psychrometric chart.
+10. Define a *white box*, *black box* and *gray box* model.
+11. What are the aims of the indoor climat control?
+12. The functions of an Air Handling Unit (AHU).
+13. Why the air vector becomes widly used in buildings?
+14. Definition of enthalpy.
+15. Definition of moist air.
+16. Saturation pressure of water vapor.
+17. Humidity ratio (or absolute humidity); why is it important?
+18. Relative humidity; why is it important?
+19. Moist air enthalpy.
+20. Dew temperature and dew point.
+21. Dry bulb and wet bulb temperature.
+22. Sensible enthalpy and latent enthalpy.
+23. Write the equations and represent a *mixing process* on the psychrometric chart.
+24. Write the equations and represent a *heating process* on the psychrometric chart.
+25. Write the equations and represent a *dry cooling process* on the psychrometric chart.
+26. Write the equations and represent a *cooling with dehumidification process* on the psychrometric chart.
+27. Write the equations and represent a *vapor humidification process* on the psychrometric chart.
+28. Write the equations and represent an *adiabatic humidification process* on the psychrometric chart.
