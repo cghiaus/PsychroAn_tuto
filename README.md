@@ -66,7 +66,8 @@ Ghiaus, C. (2022) Computational psychrometric analysis as a control problem: cas
 21. Dew temperature and dew point.
 22. Dry bulb and wet bulb temperature.
 23. Write the sensible heat balance and the latent heat balance of a thermal zone in steady-state.
-24. Write the equations for the sensible heat balance and the latent heat balance and represent the process on a psychrometric chart for:
+24. Write the equations for the sensible and the latent load of a building in steady-state (considering the transfer through the walls, thermal bridges, by infltration and the auxiliary sources). 
+25. Write the equations for the sensible heat balance and the latent heat balance and represent the process on a psychrometric chart for:
   - a *thermal zone*;
   - a *mixing process*;
   - a *heating process*;
