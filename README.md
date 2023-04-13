@@ -66,9 +66,10 @@ Ghiaus, C. (2022) Computational psychrometric analysis as a control problem: cas
 21. Dew temperature and dew point.
 22. Dry bulb and wet bulb temperature.
 23. Sensible enthalpy and latent enthalpy.
-24. Write the equations and represent a *mixing process* on the psychrometric chart.
-25. Write the equations and represent a *heating process* on the psychrometric chart.
-26. Write the equations and represent a *dry cooling process* on the psychrometric chart.
-27. Write the equations and represent a *cooling with dehumidification process* on the psychrometric chart.
-28. Write the equations and represent a *vapor humidification process* on the psychrometric chart.
-29. Write the equations and represent an *adiabatic humidification process* on the psychrometric chart.
+24. Write the equations and represent:
+  - a *mixing process* on the psychrometric chart.
+  - a *heating process* on the psychrometric chart.
+27. Write the equations and represent a *dry cooling process* on the psychrometric chart.
+28. Write the equations and represent a *cooling with dehumidification process* on the psychrometric chart.
+29. Write the equations and represent a *vapor humidification process* on the psychrometric chart.
+30. Write the equations and represent an *adiabatic humidification process* on the psychrometric chart.
