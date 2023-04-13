@@ -73,4 +73,4 @@ Ghiaus, C. (2022) Computational psychrometric analysis as a control problem: cas
   - a *dry cooling process*;
   - a *cooling with dehumidification process*;
   - a *vapor humidification process*.
-  - an *adiabatic humidification process* on the psychrometric chart.
+  - an *adiabatic humidification process*.
