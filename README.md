@@ -43,17 +43,17 @@ Ghiaus, C. (2022) Computational psychrometric analysis as a control problem: cas
 - [NumPy for MATLAB users](http://mathesaurus.sourceforge.net/matlab-numpy.html)
 
 **Questions**
-1. What is a model of a physical process?
+1. What is a mathematical model of a physical process?
 2. What is the difference between *correlation* and *causation*?
 3. Define the *inputs* and the *outputs* of a physical system.
 4. Define the *inputs* and the *outputs* of a computational model.
-5. Based on the definition of the inputs and outputs of a physical system and the inputs and outputs of a computational model, define the direct problem and the inverse problem.
+5. Based on the definition of the inputs and outputs of a physical system and the inputs and outputs of a computational model, define the direct problem.
 6. Describe the inverse problem of model identification.
 7. Describe the inverse problem of control.
-8. Explain the citation: "Divide each difficulty into as many parts as is feasable and necessary to solve it" by René Descartes, Discourse on Method, 1637
-9. Explain the citation: "Whenever I run into a problem I can't solve, I always make it bigger. I can never solve it by trying to make it smaller, but if I make it big enough, I can begin to see the outlines of a solution." by Dwight David Eisenhower.
-10. Explain the inputs: know knowns, unknown knowns, known unknowns, unknown unknowns.
-11. Define a *white box*, *black box* and *gray box* model.
+8. Explain the citation: "Divide each difficulty into as many parts as is feasable and necessary to solve it" by [René Descartes](https://www.goodreads.com/quotes/565817-divide-each-difficulty-into-as-many-parts-as-is-feasible), Discourse on Method, 1637
+9. Explain the citation: "Whenever I run into a problem I can't solve, I always make it bigger. I can never solve it by trying to make it smaller, but if I make it big enough, I can begin to see the outlines of a solution." by [Dwight David Eisenhower](https://engine-for-change.com/quote-of-the-week-make-it-big-enough/)).
+10. Explain the inputs: know knowns, unknown knowns, known unknowns, unknown unknowns ([Donald Rumsfeld](https://en.wikipedia.org/wiki/There_are_unknown_unknowns)).
+11. Define a *white box*, a *black box* and a *gray box* model.
 12. What are the aims of the indoor climat control?
 13. The functions of an Air Handling Unit (AHU).
 14. Why the air vector becomes widly used in buildings?
@@ -66,10 +66,11 @@ Ghiaus, C. (2022) Computational psychrometric analysis as a control problem: cas
 21. Dew temperature and dew point.
 22. Dry bulb and wet bulb temperature.
 23. Write the sensible heat balance and the latent heat balance of a thermal zone in steady-state.
-24. Write the equations and represent:
-  - a *mixing process* on the psychrometric chart.
-  - a *heating process* on the psychrometric chart.
-  - a *dry cooling process* on the psychrometric chart.
-  - a *cooling with dehumidification process* on the psychrometric chart.
-  - a *vapor humidification process* on the psychrometric chart.
+24. Write the equations for the sensible heat balance and the latent heat balance and represent the process on a psychrometric chart for:
+  - a *thermal zone*;
+  - a *mixing process*;
+  - a *heating process*;
+  - a *dry cooling process*;
+  - a *cooling with dehumidification process*;
+  - a *vapor humidification process*.
   - an *adiabatic humidification process* on the psychrometric chart.
