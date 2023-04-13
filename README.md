@@ -57,7 +57,7 @@ Ghiaus, C. (2022) Computational psychrometric analysis as a control problem: cas
 12. What are the aims of the indoor climat control?
 13. The functions of an Air Handling Unit (AHU).
 14. Why the air vector becomes widly used in buildings?
-15. Definition of enthalpy.
+15. Definition of enthalpy. Sensible enthalpy and latent enthalpy
 16. Definition of moist air.
 17. Saturation pressure of water vapor.
 18. Humidity ratio (or absolute humidity); why is it important?
@@ -65,11 +65,11 @@ Ghiaus, C. (2022) Computational psychrometric analysis as a control problem: cas
 20. Moist air enthalpy.
 21. Dew temperature and dew point.
 22. Dry bulb and wet bulb temperature.
-23. Sensible enthalpy and latent enthalpy.
+23. Write the sensible heat balance and the latent heat balance of a thermal zone in steady-state.
 24. Write the equations and represent:
   - a *mixing process* on the psychrometric chart.
   - a *heating process* on the psychrometric chart.
-27. Write the equations and represent a *dry cooling process* on the psychrometric chart.
-28. Write the equations and represent a *cooling with dehumidification process* on the psychrometric chart.
-29. Write the equations and represent a *vapor humidification process* on the psychrometric chart.
-30. Write the equations and represent an *adiabatic humidification process* on the psychrometric chart.
+  - a *dry cooling process* on the psychrometric chart.
+  - a *cooling with dehumidification process* on the psychrometric chart.
+  - a *vapor humidification process* on the psychrometric chart.
+  - an *adiabatic humidification process* on the psychrometric chart.
