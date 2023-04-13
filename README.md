@@ -1,6 +1,7 @@
 # PsychroAn_tuto - Computational psychrometric analysis of HVAC systems: tutorials
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD) Launch the whole repository.
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD) 
+Launch the whole repository.
 
 **Contents**
 
@@ -51,8 +52,8 @@ Ghiaus, C. (2022) Computational psychrometric analysis as a control problem: cas
 6. Describe the inverse problem of model identification.
 7. Describe the inverse problem of control.
 8. Explain the citation: "Divide each difficulty into as many parts as is feasable and necessary to solve it" by [René Descartes](https://www.goodreads.com/quotes/565817-divide-each-difficulty-into-as-many-parts-as-is-feasible), Discourse on Method, 1637
-9. Explain the citation: "Whenever I run into a problem I can't solve, I always make it bigger. I can never solve it by trying to make it smaller, but if I make it big enough, I can begin to see the outlines of a solution." by [Dwight David Eisenhower](https://engine-for-change.com/quote-of-the-week-make-it-big-enough/)).
-10. Explain the inputs: know knowns, unknown knowns, known unknowns, unknown unknowns ([Donald Rumsfeld](https://en.wikipedia.org/wiki/There_are_unknown_unknowns) or [Rumsfeld matrix](https://medium.com/@andreamantovani/known-knowns-known-unknowns-unknown-unknowns-leadership-367f346b0953)).
+9. Explain the citation: "Whenever I run into a problem I can't solve, I always make it bigger. I can never solve it by trying to make it smaller, but if I make it big enough, I can begin to see the outlines of a solution." by [Dwight David Eisenhower](https://engine-for-change.com/quote-of-the-week-make-it-big-enough/) in the context of numerical simulation of physical systems..
+10. Explain the type of inputs of numerical models used for simulation: know knowns, unknown knowns, known unknowns, unknown unknowns ([Donald Rumsfeld](https://en.wikipedia.org/wiki/There_are_unknown_unknowns) or [Rumsfeld matrix](https://medium.com/@andreamantovani/known-knowns-known-unknowns-unknown-unknowns-leadership-367f346b0953)).
 11. Define a *white box*, a *black box* and a *gray box* model.
 12. What are the aims of the indoor climat control?
 13. The functions of an Air Handling Unit (AHU).
