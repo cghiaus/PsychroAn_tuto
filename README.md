@@ -13,13 +13,13 @@ Launch the whole repository.
 5. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT05_ad_hum.ipynb) `T05_ad_hum.ipynb` Heating and adiabatic humidification.
 6. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT06_cool.ipynb) `T06_cool` Cooling with dehumidification.
 
-**Elementary models**
+## Elementary models
 
 The models presented in the tutorials are formed by a system of equations constructed with blocks of elementary processes (Table 1).
 > Table 1. Models of the elementary processes ([Ghiaus 2022](https://hal.archives-ouvertes.fr/hal-03484064/document)).
 > ![](Figures/elementary_processes.svg)
 
-**Bibliography**
+## Bibliography
 
 Ghiaus, C. (2014). Linear algebra solution to psychometric analysis of air-conditioning systems. *Energy, 74*, 555-566. DOI: [10.1016/j.energy.2014.07.021](https://doi.org/10.1016/j.energy.2014.07.021)
 
@@ -29,7 +29,7 @@ Ghiaus, C. (2021). PsychroAn_cool: Psychrometric analysis of cooling systems as 
 
 Ghiaus, C. (2022) Computational psychrometric analysis as a control problem: case of cooling and dehumidification systems, *International Journal of Building Performance Simulation, 15*(1), pp. 21-38, DOI: [10.1080/19401493.2021.1995498](https://doi.org/10.1080/19401493.2021.1995498), (open access preprint [hal-03484064](https://hal.archives-ouvertes.fr/hal-03484064/document))
 
-*Support*
+# Support
 
 - [LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 
@@ -43,7 +43,7 @@ Ghiaus, C. (2022) Computational psychrometric analysis as a control problem: cas
 
 - [NumPy for MATLAB users](http://mathesaurus.sourceforge.net/matlab-numpy.html)
 
-**Questions**
+## Questions
 1. What is a mathematical model of a physical process?
 2. What is the difference between *correlation* and *causation*?
 3. Define the *inputs* and the *outputs* of a physical system.
@@ -51,8 +51,8 @@ Ghiaus, C. (2022) Computational psychrometric analysis as a control problem: cas
 5. Based on the definition of the inputs and outputs of a physical system and the inputs and outputs of a computational model, define the direct problem.
 6. Describe the inverse problem of model identification.
 7. Describe the inverse problem of control.
-8. Explain the citation: "Divide each difficulty into as many parts as is feasable and necessary to solve it" by [René Descartes](https://www.goodreads.com/quotes/565817-divide-each-difficulty-into-as-many-parts-as-is-feasible), Discourse on Method, 1637
-9. Explain the citation: "Whenever I run into a problem I can't solve, I always make it bigger. I can never solve it by trying to make it smaller, but if I make it big enough, I can begin to see the outlines of a solution." by [Dwight David Eisenhower](https://engine-for-change.com/quote-of-the-week-make-it-big-enough/) in the context of numerical simulation of physical systems..
+8. Explain the citation: "Divide each difficulty into as many parts as is feasable and necessary to solve it" by [René Descartes](https://www.goodreads.com/quotes/565817-divide-each-difficulty-into-as-many-parts-as-is-feasible), Discourse on Method, 1637.
+9. Explain the citation: "Whenever I run into a problem I can't solve, I always make it bigger. I can never solve it by trying to make it smaller, but if I make it big enough, I can begin to see the outlines of a solution." by [Dwight David Eisenhower](https://engine-for-change.com/quote-of-the-week-make-it-big-enough/) in the context of numerical simulation of physical systems.
 10. Explain the type of inputs of numerical models used for simulation: know knowns, unknown knowns, known unknowns, unknown unknowns ([Donald Rumsfeld](https://en.wikipedia.org/wiki/There_are_unknown_unknowns) or [Rumsfeld matrix](https://medium.com/@andreamantovani/known-knowns-known-unknowns-unknown-unknowns-leadership-367f346b0953)).
 11. Define a *white box*, a *black box* and a *gray box* model.
 12. What are the aims of the indoor climat control?
@@ -76,3 +76,4 @@ Ghiaus, C. (2022) Computational psychrometric analysis as a control problem: cas
   - a *cooling with dehumidification process*;
   - a *vapor humidification process*.
   - an *adiabatic humidification process*.
+
