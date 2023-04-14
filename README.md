@@ -29,7 +29,7 @@ Ghiaus, C. (2021). PsychroAn_cool: Psychrometric analysis of cooling systems as 
 
 Ghiaus, C. (2022) Computational psychrometric analysis as a control problem: case of cooling and dehumidification systems, *International Journal of Building Performance Simulation, 15*(1), pp. 21-38, DOI: [10.1080/19401493.2021.1995498](https://doi.org/10.1080/19401493.2021.1995498), (open access preprint [hal-03484064](https://hal.archives-ouvertes.fr/hal-03484064/document))
 
-# Support
+## Support
 
 - [LaTeX/Mathematics](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 
