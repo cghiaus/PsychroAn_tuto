@@ -1,20 +1,20 @@
 # PsychroAn_tuto - Computational psychrometric analysis of HVAC systems: tutorials
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD) 
-Launch the whole repository.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/cghiaus/dm4bem/blob/main/LICENSE)
 
 **Contents**
 
 *Interactive web pages (using Voilà)*
-1. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT01_moist_air_prop.ipynb) `T01_moist_air_prop.ipynb` Moist air properties.
-2. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT02_loads_winter.ipynb) `T02_loads_winter.ipynb` Thermal loads: winter.
-3. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT03_mix.ipynb) `T03_mix.ipynb` Adiabatic mixing and isentalpic condensation.
-4. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT04_va_hum.ipynb) `T04_va_hum.ipynb` Heating and vapor humidification.
-5. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT05_ad_hum.ipynb) `T05_ad_hum.ipynb` Heating and adiabatic humidification.
-6. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT06_cool.ipynb) `T06_cool` Cooling with dehumidification.
+1. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT01_moist_air_prop.ipynb) [T01_moist_air_prop.ipynb](T01_moist_air_prop.ipynb) Moist air properties.
+2. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT02_loads_winter.ipynb) [T02_loads_winter.ipynb](T02_load_winter.ipynb) Thermal loads: winter.
+3. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT03_mix.ipynb) [T03_mix.ipynb](T03_mix.ipynb) Adiabatic mixing and isentalpic condensation.
+4. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT04_va_hum.ipynb) [T04_va_hum.ipynb](T04_heat_va_hum.ipynb) Heating and vapor humidification.
+5. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT05_ad_hum.ipynb) [T05_ad_hum.ipynb](T05_heat_ad_hum.ipynb) Heating and adiabatic humidification.
+6. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT06_cool.ipynb) [T06_cool](T06_cool.ipynb) Cooling with dehumidification.
 
 **Annex**
-- [Design procedure for supply air mass flow rate](Annex01.ipynb)
+- [Design procedure for mass flow rate of supply air](Annex01.ipynb)
 
 ## Elementary models
 
