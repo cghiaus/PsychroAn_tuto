@@ -4,12 +4,12 @@ channels:
   - conda-forge
 
 dependencies:
-  - python
-  - jupyter
-  - jupyterlab
-  - ipywidgets
-  - matplotlib
-  - numpy
-  - scipy
-  - pandas
+  - python=3.8.8
+  - jupyter=1.0.0
+  - jupyterlab=3.0.14
+  - ipywidgets=7.5.1
+  - matplotlib=3.4.1
+  - numpy=1.20.2
+  - scipy=1.6.2
+  - pandas=1.2.4
   - voila
