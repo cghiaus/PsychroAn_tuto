@@ -6,12 +6,13 @@
 **Contents**
 
 *Interactive web pages (using Voilà)*
-1. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT01_moist_air_prop.ipynb) [T01_moist_air_prop.ipynb](T01_moist_air_prop.ipynb) Moist air properties.
-2. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT02_load_winter.ipynb) [T02_loads_winter.ipynb](T02_load_winter.ipynb) Thermal loads: winter.
-3. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT03_mix.ipynb) [T03_mix.ipynb](T03_mix.ipynb) Adiabatic mixing and isentalpic condensation.
-4. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT04_va_hum.ipynb) [T04_va_hum.ipynb](T04_heat_va_hum.ipynb) Heating and vapor humidification.
-5. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT05_ad_hum.ipynb) [T05_ad_hum.ipynb](T05_heat_ad_hum.ipynb) Heating and adiabatic humidification.
-6. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fvoila%2Frender%2FT06_cool.ipynb) [T06_cool](T06_cool.ipynb) Cooling with dehumidification.
+1. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fdoc%2Ftree%2FT01_moist_air_prop.ipynb) [T01_moist_air_prop.ipynb](T01_moist_air_prop.ipynb) Moist air properties.
+2. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fdoc%2Ftree%2FT02_load_winter.ipynb) [T02_loads_winter.ipynb](T02_load_winter.ipynb) Thermal loads: winter.
+3. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fdoc%2Ftree%2FT03_mix.ipynb) [T03_mix.ipynb](T03_mix.ipynb) Adiabatic mixing and isentalpic condensation
+4. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fdoc%2Ftree%2FT04_heat_va_hum.ipynb) [T04_va_hum.ipynb](T04_heat_va_hum.ipynb) Heating and vapor humidification.
+5. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fdoc%2Ftree%2FT05_heat_ad_hum.ipynb) [T05_ad_hum.ipynb](T05_heat_ad_hum.ipynb) Heating and adiabatic humidification.
+6. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fdoc%2Ftree%2FT06_cool.ipynb) [T06_cool](T06_cool.ipynb) Cooling with dehumidification.
+7. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cghiaus/PsychroAn_tuto/HEAD?urlpath=%2Fdoc%2Ftree%2FT07_2zones.ipynb) [T07_2zones](T07_2zones.ipynb) Two zones air conditioning.
 
 **Annex**
 - [Design procedure for mass flow rate of supply air](Annex01.ipynb)
